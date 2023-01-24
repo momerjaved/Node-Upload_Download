@@ -16,8 +16,6 @@ var storage = multer.diskStorage({
 });
 
 var upload = multer({storage:storage});
-
-
 // Start the server
 server.listen(PORT, () =>
 console.log(`Server listening on port ${PORT}!`),
@@ -33,12 +31,11 @@ server.post('/uploadfile',upload.any(),function(req,res,next){
 server.get('/download', (req, res) => {
     // const path = "./uploaded_files" + req.body.path;
     // const file = fs.createReadStream(path);
-    const filename = (new Date()).toISOString();
+    const filename = req.query.filename;
     // res.setHeader('Content-Disposition', 'attachment: filename="' + filename + '"');
     // return res.send('API response for GET method');
-    var filePath = "./uploaded_files/bear_fight.gif"; // Or format the path using the `id` rest param
+    var filePath = `./uploaded_files/${filename}`; // Or format the path using the `id` rest param
     //var fileName = "download.gif"; // The default name the browser will use
-    
     res.download(filePath, filename); 
   });
 
