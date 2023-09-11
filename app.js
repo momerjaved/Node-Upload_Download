@@ -27,6 +27,12 @@ server.post('/uploadfile',upload.any(),function(req,res,next){
     res.status(200).send({'message' : "file uploaded"});
 });
 
+server.get('/home', (req,res) => {
+
+    res.status(200).send("Welcome to file upload utility!");
+});
+
+
 //HTTP GET Method
 server.get('/download', (req, res) => {
     // const path = "./uploaded_files" + req.body.path;
