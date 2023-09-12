@@ -4,7 +4,7 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "firstcontainer",
+      "path": "firstcontainer/{name}",
       "connection": "ojstorage1_STORAGE"
     }
   ]
