@@ -4,8 +4,8 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "ojblobcontainer",
-      "connection": "ojstorage2_STORAGE"
+      "path": "mycontainer",
+      "connection": "storageacct427_STORAGE"
     }
   ]
 }
