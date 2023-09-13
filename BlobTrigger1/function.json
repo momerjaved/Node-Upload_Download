@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "ojblobcontainer",
+      "connection": "ojstorage2_STORAGE"
+    }
+  ]
+}
