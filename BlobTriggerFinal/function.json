@@ -5,7 +5,7 @@
       "type": "blobTrigger",
       "direction": "in",
       "path": "mycontainer",
-      "connection": "storageacct427_STORAGE"
+      "connection": "DefaultEndpointsProtocol=https;AccountName=storageacct427;AccountKey=QHaUIiLwwRPQdJXwCC7Z+nrxPhVJNFggiecvAmSbazPCKgz5j2xOqaoBSeWtZqHR+6DsKSxEL8SB+AStrCEg4A==;EndpointSuffix=core.windows.net"
     }
   ]
 }
